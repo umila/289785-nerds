@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <img class="logo" src="#">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">СТУДИЯ</a>
+          </li>
+          <li>
+            <a href="#">КЛИЕНТЫ</a>
+          </li>
+          <li>
+            <a href="#">МАГАЗИН</a>
+          </li>
+          <li>
+            <a href="#">КОНТАКТЫ</a>
+          </li>
+        </ul>
+        <div class="user-block">
+          <a class="cart" href="#">КОРЗИНА</a>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+    <main class="catalog-content">
+      <div class="catalog-content-left">
+        <form class="filter" method="post" action="#">
+          <div class="filter-price">
+            <b class="filter-title">СТОИМОСТЬ</b>
+            <div class="filter-price__slider">
+              <input type="range" min="0" max="15000" id="price-id">
+              <label for="price-id">ОТ 0 ДО 15000</label>
+            </div>
+          </div>
+          <div class="filter-grid">
+            <b class="filter-title">СЕТКА</b>
+            <div class="filter-grid__checkbox">
+              <input type="checkbox" name="grid1" id="grid1-id" checked>
+              <label for="grid1-id">Адаптивная</label>
+            </div>
+            <div class="filter-grid__checkbox">
+              <input type="checkbox" name="grid2" id="grid2-id" checked>
+              <label for="grid2-id">Фиксированная</label>
+            </div>
+            <div class="filter-grid__checkbox">
+              <input type="checkbox" name="grid3" id="grid3-id" checked>
+              <label for="grid3-id">Резиновая</label>
+            </div>
+          </div>
+          <div class="filter-features">
+            <b class="filter-title">ОСОБЕННОСТИ</b>
+            <div class="filter-features__checkbox">
+              <input type="checkbox" name="feature1" id="feature1-id">
+              <label for="feature1-id">Слайдер</label>
+            </div>
+            <div class="filter-features__checkbox">
+              <input type="checkbox" name="feature2" id="feature2-id" checked>
+              <label for="feature2-id">Блок преимуществ</label>
+            </div>
+            <div class="filter-features__checkbox">
+              <input type="checkbox" name="feature3" id="feature3-id" checked>
+              <label for="feature3-id">Новости</label>
+            </div>
+            <div class="filter-features__checkbox">
+              <input type="checkbox" name="feature4" id="feature4-id" checked>
+              <label for="feature4-id">Галерея</label>
+            </div>
+            <div class="filter-features__checkbox">
+              <input type="checkbox" name="feature5" id="feature5-id" checked>
+              <label for="feature5-id">Корзина</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="catalog-content-rigth">
+        <div class="catalog-filter">
+          <b class="filter-title">СОРТИРОВАТЬ:</b>
+          <a class="catalog-filter__price" href="#">ПО ЦЕНЕ</a>
+          <a class="catalog-filter__type" href="#">ПО ТИПУ</a>
+          <a class="catalog-filter__name" href="#">ПО НАЗВАНИЮ</a>
+        </div>
+        <div class="catalog-list">
+          <ul>
+            <li>
+              <a class="catalog-list__product" href="#">
+                <img src="http://placehold.it/150x100" alt="Sedona">
+              </a>
+            </li>
+            <li>
+              <a class="catalog-list__product" href="#">
+                <img src="http://placehold.it/150x100" alt="Pink">
+              </a>
+            </li>
+            <li>
+              <a class="catalog-list__product" href="#">
+                <img src="http://placehold.it/150x100" alt="Sedona">
+              </a>
+            </li>
+            <li>
+              <a class="catalog-list__product" href="#">
+                <img src="http://placehold.it/150x100" alt="Borodinski">
+              </a>
+            </li>
+            <li>
+              <a class="catalog-list__product" href="#">
+                <img src="http://placehold.it/150x100" alt="Вязаные корзинки">
+              </a>
+            </li>
+            <li>
+              <a class="catalog-list__product" href="#">
+                <img src="http://placehold.it/150x100" alt="Планшет">
+              </a>
+            </li>
+            <li>
+              <a class="catalog-list__product" href="#">
+                <img src="http://placehold.it/150x100" alt="Квас">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-button">
+          <a class="catalog-button__page" href="#">1</a>
+          <a class="catalog-button__page" href="#">2</a>
+          <a class="catalog-button__page" href="#">3</a>
+          <a class="catalog-button__page" href="#">СЛЕДУЮЩАЯ</a>
+        </div>
+      </div>
+    </main>
+    <div class="contacts-container">
+      <section class="contacts">
+        <b>NЁRDS DESIGN STUDIO</b>
+           191186, Санкт-Петербург,
+           ул. Б. Конюшенная, д. 19/8
+           тел. +7 (812) 275-75-75
+        <a class="contacts__btn" href="#">Напишите нам</a>
+      </section>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
+        </section>
+      </div>
+      <div class="container">
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+  </body>
+</html>

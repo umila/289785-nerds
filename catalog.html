@@ -35,23 +35,30 @@
         <form class="filter" method="post" action="#">
           <div class="filter-price">
             <b class="filter-title">СТОИМОСТЬ</b>
-            <div class="filter-price__slider">
-              <input type="range" min="0" max="15000" id="price-id">
-              <label for="price-id">ОТ 0 ДО 15000</label>
+            <div id="slider-range" class="price-slider">
+              <div class="price-slider__range"></div>
+              <span class="price-slider__handle"></div>
+              <span class="price-slider__handle"></div>
+            </div>
+            <div class="price__amount">
+              <label for="amount1">ОТ</label>
+              <input type="text" id="amount1" name="amount1" value="0">
+              <label for="amount2">ДО</label>
+              <input type="text" id="amount2" name="amount2" value="15 000">
             </div>
           </div>
           <div class="filter-grid">
             <b class="filter-title">СЕТКА</b>
-            <div class="filter-grid__checkbox">
-              <input type="checkbox" name="grid1" id="grid1-id" checked>
+            <div class="filter-grid__radio">
+              <input type="radio" name="grid1" id="grid1-id" checked>
               <label for="grid1-id">Адаптивная</label>
             </div>
-            <div class="filter-grid__checkbox">
-              <input type="checkbox" name="grid2" id="grid2-id" checked>
+            <div class="filter-grid__radio">
+              <input type="radio" name="grid2" id="grid2-id" checked>
               <label for="grid2-id">Фиксированная</label>
             </div>
-            <div class="filter-grid__checkbox">
-              <input type="checkbox" name="grid3" id="grid3-id" checked>
+            <div class="filter-grid__radio">
+              <input type="radio" name="grid3" id="grid3-id" checked>
               <label for="grid3-id">Резиновая</label>
             </div>
           </div>
@@ -77,6 +84,9 @@
               <input type="checkbox" name="feature5" id="feature5-id" checked>
               <label for="feature5-id">Корзина</label>
             </div>
+            <div class="filter-button">
+              <button type="submit" name="btn-show" id="btn-show-id">Показать</button>
+            </div>
           </div>
         </form>
       </div>
@@ -86,13 +96,23 @@
           <a class="catalog-filter__price" href="#">ПО ЦЕНЕ</a>
           <a class="catalog-filter__type" href="#">ПО ТИПУ</a>
           <a class="catalog-filter__name" href="#">ПО НАЗВАНИЮ</a>
+          <a class="catalog-filter__arrowup" href="#"></a>
+          <a class="catalog-filter__arrowdown" href="#"></a>
         </div>
         <div class="catalog-list">
-          <ul>
-            <li>
-              <a class="catalog-list__product" href="#">
+          <ul class="list">
+            <li class="list-product">
+              <div class="list-product__upblock">
+                <img src="#" alt="Информация">
+              </div>
+              <div class="list-product__mainblock">
                 <img src="http://placehold.it/150x100" alt="Sedona">
-              </a>
+              </div>
+              <div class="list-product__downblock">
+                <b>SEDONA</b>
+                <p>Информационный сайт для туристов</p>
+                <button type="submit" name="btn-price" id="btn-price-id">9 900 РУБ.</button>
+              </div>
             </li>
             <li>
               <a class="catalog-list__product" href="#">

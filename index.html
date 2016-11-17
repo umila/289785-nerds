@@ -7,138 +7,149 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="logo" src="img/nerds-logo.png" width="160" height="70" alt="Логотип">
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="#">СТУДИЯ</a>
-          </li>
-          <li>
-            <a href="#">КЛИЕНТЫ</a>
-          </li>
-          <li>
-            <a href="#">МАГАЗИН</a>
-          </li>
-          <li>
-            <a href="#">КОНТАКТЫ</a>
-          </li>
-        </ul>
+      <div class="container clearfix">
+        <div class="logo-container">
+          <img class="logo" src="img/nerds-logo.png" width="160" height="70" alt="Логотип">
+        </div>
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#">СТУДИЯ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">КЛИЕНТЫ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">МАГАЗИН</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
         <div class="user-block">
           <img src="img/cart-icon.png" alt="Корзина">
           <a class="cart" href="#">КОРЗИНА</a>
         </div>
-      </nav>
+      </div>
     </header>
-    <div class="index-content">
-      <div class="index-content-left">
-        <h1>ДОЛГО,ДОРОГО,СКРУПУЛЕЗНО<h>
-        <p>Математически выверенный дизайн
-          для вашего сайта или мобильного приложения.</p>
-        <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+    <main class="container">
+      <div class="slider clearfix">
+        <div class="slider-left">
+          <h1>Долго,дорого,<br>
+              скрупулезно.</h1>
+          <span>Математически выверенный дизайн</span>
+          <span>для вашего сайта или мобильного приложения.</span>
+          <div class="slider-button">
+            <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+        </div>
+        <div class="slider-right">
+          <img src="img/slider-1.jpg" width="760" height="431" alt="Смартфоны" >
+        </div>
       </div>
-      <div class="index-content-right">
-        <img src="img/slider-1.jpg" alt="Смартфоны" >
-      </div>
-    </div>
-
-    <div class=product-container>
-      <ul class="product-list">
-        <li>
-          <article class="product-list__item">
-            <img src="img/illustration-1.jpg" width="300" height="146" alt="Ноутбук"><br>
-            <b>ВЕБ-САЙТЫ</b>
-            <p>Мир никогда не будет прежним
-               после того как увидит ваш сайт</p>
-            <a class="product-list__btn" href="#">ЗАКАЗАТЬ</a>
-          </article>
-        </li>
-        <li>
-          <article class="product-list__item">
-            <img src="img/illustration-2.jpg" width="300" height="146" alt="Смартфон"><br>
-            <b>ПРИЛОЖЕНИЯ</b>
-            <p>Покорите топ-10 приложений
-               в Appstore и Google Play</p>
-            <a class="product-list__btn" href="#">ЗАКАЗАТЬ</a>
-          </article>
-        </li>
-        <li>
-          <article class="product-list__item">
-            <img src="img/illustration-3.jpg" width="300" height="146" alt="Доска"><br>
-            <b>ПРЕЗЕНТАЦИИ</b>
-            <p>Вы даже не подозреваете,насколько вы изумительны</p>
-            <a class="product-list__btn" href="#">ЗАКАЗАТЬ</a>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <div class="container">
-      <div class="company-task">
-        <h2>Мы — маленькая, но гордая
-            дизайн-студия из Краснодара. </h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <b>Выполняем заказы на разработку:</b>
-        <ul class="company-task__list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </div>
-      <div class="company-statistic">
-        <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Название компании">
-        <p></p>
-        <ul class="company-statistic__advantage">
-          <li>
-            <b>146%</b>
-            <p>Уровень самоотдачи</p>
+      <section class="products clearfix">
+        <ul class="products-list">
+          <li class="products-list__item">
+            <article>
+              <img src="img/illustration-1.jpg" width="300" height="146" alt="Ноутбук"><br>
+              <span><b>ВЕБ-САЙТЫ</b></span>
+              <span>Мир никогда не будет прежним</span>
+              <span>после того как увидит ваш сайт</span>
+              <a class="products-list__btn" href="#">ЗАКАЗАТЬ</a>
+            </article>
           </li>
-          <li>
-            <b>100%</b>
-            <p>Соблюдение сроков</p>
+          <li class="products-list__item">
+            <article>
+              <img src="img/illustration-2.jpg" width="300" height="146" alt="Смартфон"><br>
+              <span><b>ПРИЛОЖЕНИЯ</b></span>
+              <span>Покорите топ-10 приложений
+                    в Appstore и Google Play</span>
+              <a class="products-list__btn" href="#">ЗАКАЗАТЬ</a>
+            </article>
           </li>
-          <li>
-            <b>50%</b>
-            <p>Минимальная предоплата</p>
+          <li class="products-list__item">
+            <article>
+              <img src="img/illustration-3.jpg" width="300" height="146" alt="Доска"><br>
+              <span><b>ПРЕЗЕНТАЦИИ</b></span>
+              <span>Вы даже не подозреваете,насколько вы изумительны</soan>
+                <a class="product-list__btn" href="#">ЗАКАЗАТЬ</a>
+              </article>
           </li>
         </ul>
-      </div>
-    </div>
-    <div class="partner-container">
-      <ul class="partner-list">
-        <li>
-          <img class="partner-list__logo" src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Academy">
-        </li>
-        <li>
-          <img class="partner-list__logo" src="img/logo-2.png" width="209" height="87" alt="Логотип BORODINSKI">
-        </li>
-        <li>
-          <img class="partner-list__logo" src="img/logo-3.png" width="185" height="52" alt="Логотип PINK">
-        </li>
-        <li>
-          <img class="partner-list__logo" src="img/logo-4.png" width="173" height="84" alt="Логотип MISKA">
-        </li>
-      </ul>
-    </div>
-    <div class="contacts-container">
-      <section class="contacts">
-        <b>NЁRDS DESIGN STUDIO</b>
-           191186, Санкт-Петербург,
-           ул. Б. Конюшенная, д. 19/8
-           тел. +7 (812) 275-75-75
-        <a class="location-contact_btn" href="#">Напишите нам</a>
       </section>
+      <div class="tasks clearfix">
+        <div class="tasks-left">
+          <h2>Мы — маленькая, но гордая
+            дизайн-студия из Краснодара. </h2>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b>Выполняем заказы на разработку:</b>
+          <ul class="tasks-left-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="tasks-right">
+          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Название компании">
+          <p></p>
+          <ul class="tasks-right-advantages">
+            <li>
+              <b>146%</b>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li>
+              <b>100%</b>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li>
+              <b>50%</b>
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="partners clearfix">
+      <ul class="partners-list">
+        <li class="partners-list__item">
+          <img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Academy">
+        </li>
+        <li class="partners-list__item">
+          <img src="img/logo-2.png" width="209" height="87" alt="Логотип BORODINSKI">
+        </li>
+        <li class="partners-list__item">
+          <img src="img/logo-3.png" width="185" height="52" alt="Логотип PINK">
+        </li>
+        <li class="partners-list__item">
+          c
+        </li>
+      </ul>
+    </div>
+  </main>
+  <div class="location">
+      <div class="contacts">
+        <span><b>NЁRDS DESIGN STUDIO</b></span>
+        <span>191186, Санкт-Петербург,</span>
+        <span>ул. Б. Конюшенная, д. 19/8</span>
+        <span>тел. +7 (812) 275-75-75</span>
+        <a class="contacts-btn" href="#">Напишите нам</a>
+      </div>
+      <div class="map">
+        <img src="img/map.png" width="1440" height="416" alt="Карта">
+      </div>
     </div>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
         </section>
-      </div>
-      <div class="container">
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <section class="footer-text">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <span>Скидка 10% для друзей из социальных сетей.<//span>
+        </section>
       </div>
     </footer>
   </body>
